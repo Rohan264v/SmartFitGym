@@ -29,8 +29,7 @@ publish/
 
 # Environment files
 appsettings.Development.json
-# Uncomment if you want to ignore all appsettings.*.json except base
-# appsettings.*.json
+appsettings.json
 
 # Windows
 Thumbs.db
