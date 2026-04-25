@@ -1,0 +1,90 @@
+@model SmartFitGym.Models.MembershipPlan
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card border-0 p-4" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px;">
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-white">Checkout</h2>
+                        <p class="text-white-50">Complete your subscription for the <span style="color: var(--gym-red);">@Model.PlanName</span> plan.</p>
+                    </div>
+
+                    <div class="row">
+                        <!-- Order Summary -->
+                        <div class="col-md-5 order-md-2 mb-4">
+                            <div class="p-3 bg-dark rounded border border-secondary">
+                                <h4 class="d-flex justify-content-between align-items-center mb-3 text-white">
+                                    <span class="text-white">Order Summary</span>
+                                </h4>
+                                <ul class="list-group list-group-flush bg-transparent">
+                                    <li class="list-group-item bg-transparent text-white d-flex justify-content-between lh-sm border-secondary">
+                                        <div>
+                                            <h6 class="my-0">@Model.PlanName Plan</h6>
+                                            <small class="text-white-50">@Model.DurationMonths Month(s) access</small>
+                                        </div>
+                                        <span class="text-white">₹@Model.Price.ToString("0")</span>
+                                    </li>
+                                    <li class="list-group-item bg-transparent text-white d-flex justify-content-between border-secondary">
+                                        <span>Total (INR)</span>
+                                        <strong style="color: var(--gym-red);">₹@Model.Price.ToString("0")</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Payment Form -->
+                        <div class="col-md-7 order-md-1">
+                            <h4 class="mb-3 text-white">Payment Method</h4>
+                            <form asp-action="ConfirmSubscription" method="post">
+                                <input type="hidden" name="planId" value="@Model.MembershipPlanId" />
+                                
+                                <div class="my-3 text-white">
+                                    <div class="form-check mb-2">
+                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" value="Credit Card" checked required>
+                                        <label class="form-check-label" for="credit">Credit Card <i class="fab fa-cc-visa ms-1 text-primary"></i> <i class="fab fa-cc-mastercard text-warning"></i></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" value="PayPal" required>
+                                        <label class="form-check-label" for="paypal">PayPal <i class="fab fa-paypal text-info"></i></label>
+                                    </div>
+                                </div>
+
+                                <div class="row gy-3">
+                                    <div class="col-md-6">
+                                        <label for="cc-name" class="form-label text-white">Name on card</label>
+                                        <input type="text" class="form-control bg-dark text-white border-secondary" id="cc-name" placeholder="" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="cc-number" class="form-label text-white">Credit card number</label>
+                                        <input type="text" class="form-control bg-dark text-white border-secondary" id="cc-number" placeholder="" required>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="cc-expiration" class="form-label text-white">Expiration</label>
+                                        <input type="text" class="form-control bg-dark text-white border-secondary" id="cc-expiration" placeholder="MM/YY" required>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="cc-cvv" class="form-label text-white">CVV</label>
+                                        <input type="text" class="form-control bg-dark text-white border-secondary" id="cc-cvv" placeholder="" required>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4 border-secondary">
+
+                                <button class="btn btn-gym w-100 py-3 fw-bold fs-5" type="submit">
+                                    <i class="fas fa-lock me-2"></i>Pay ₹@Model.Price.ToString("0")
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

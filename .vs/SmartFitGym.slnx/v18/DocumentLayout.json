@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\views\\ai\\recommend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:views\\ai\\recommend.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\contactmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\contactmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\workoutlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\workoutlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\membershipplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\membershipplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\memberprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\memberprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|c:\\users\\rohan\\source\\repos\\smartfitgym\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{557761CC-D39D-B9BE-E79B-5A0208914641}|SmartFitGym.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Recommend.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Views\\AI\\Recommend.cshtml",
+              "RelativeDocumentMoniker": "Views\\AI\\Recommend.cshtml",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Views\\AI\\Recommend.cshtml",
+              "RelativeToolTip": "Views\\AI\\Recommend.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T11:44:42.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T05:37:28.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAYwE4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-21T05:36:47.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAqwLIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:34:03.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAqwF4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:29:43.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:29:15.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\ContactMessage.cs",
+              "RelativeDocumentMoniker": "Models\\ContactMessage.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\ContactMessage.cs",
+              "RelativeToolTip": "Models\\ContactMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:28:06.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\Attendance.cs",
+              "RelativeDocumentMoniker": "Models\\Attendance.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\Attendance.cs",
+              "RelativeToolTip": "Models\\Attendance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:27:42.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WorkoutLog.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\WorkoutLog.cs",
+              "RelativeDocumentMoniker": "Models\\WorkoutLog.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\WorkoutLog.cs",
+              "RelativeToolTip": "Models\\WorkoutLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:27:11.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\Subscription.cs",
+              "RelativeDocumentMoniker": "Models\\Subscription.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\Subscription.cs",
+              "RelativeToolTip": "Models\\Subscription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:26:45.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MembershipPlan.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\MembershipPlan.cs",
+              "RelativeDocumentMoniker": "Models\\MembershipPlan.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\MembershipPlan.cs",
+              "RelativeToolTip": "Models\\MembershipPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:26:12.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\Trainer.cs",
+              "RelativeDocumentMoniker": "Models\\Trainer.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\Trainer.cs",
+              "RelativeToolTip": "Models\\Trainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:25:42.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MemberProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\MemberProfile.cs",
+              "RelativeDocumentMoniker": "Models\\MemberProfile.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\MemberProfile.cs",
+              "RelativeToolTip": "Models\\MemberProfile.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:24:57.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "Models\\Member.cs",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\Models\\Member.cs",
+              "RelativeToolTip": "Models\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T05:24:19.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Rohan\\source\\repos\\SmartFitGym\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T05:23:12.803Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

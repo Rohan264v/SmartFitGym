@@ -1,0 +1,87 @@
+@model SmartFitGym.Models.ContactMessage
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold text-white">Contact <span style="color: var(--gym-red);">Us</span></h2>
+        <div style="height: 3px; width: 80px; background: var(--gym-red); margin: 20px auto;"></div>
+        <p class="text-white-50 fs-5">Have questions? We'd love to hear from you.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5 mb-4">
+            <div class="card border-0 p-4 h-100" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px;">
+                <div class="card-body text-white">
+                    <h3 class="fw-bold mb-4">Get In Touch</h3>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3" style="font-size: 2rem; color: var(--gym-red);">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Location</h5>
+                            <p class="text-white-50 mb-0">123 Fitness Avenue, Tech City, 10010</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3" style="font-size: 2rem; color: var(--gym-red);">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Phone</h5>
+                            <p class="text-white-50 mb-0">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3" style="font-size: 2rem; color: var(--gym-red);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Email</h5>
+                            <p class="text-white-50 mb-0">hello@smartfitgym.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="card border-0 p-4" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px;">
+                <div class="card-body">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success bg-success text-white border-0">
+                            <i class="fas fa-check-circle me-2"></i>@TempData["SuccessMessage"]
+                        </div>
+                    }
+
+                    <form asp-action="Contact" method="post">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="FullName" class="form-label text-white">Full Name</label>
+                                <input asp-for="FullName" class="form-control" style="background: rgba(255,255,255,0.1); color: white; border: none;" required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Email" class="form-label text-white">Email Address</label>
+                                <input asp-for="Email" type="email" class="form-control" style="background: rgba(255,255,255,0.1); color: white; border: none;" required />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Subject" class="form-label text-white">Subject</label>
+                            <input asp-for="Subject" class="form-control" style="background: rgba(255,255,255,0.1); color: white; border: none;" required />
+                        </div>
+                        <div class="mb-4">
+                            <label asp-for="Message" class="form-label text-white">Message</label>
+                            <textarea asp-for="Message" class="form-control" rows="5" style="background: rgba(255,255,255,0.1); color: white; border: none;" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gym w-100 py-2 fw-bold">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

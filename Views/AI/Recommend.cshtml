@@ -1,0 +1,89 @@
+@{
+    ViewData["Title"] = "AI Workout Recommender";
+    var profile = ViewBag.Profile as SmartFitGym.Models.MemberProfile;
+}
+
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold text-white"><i class="fas fa-robot text-primary me-3"></i>AI Workout <span style="color: var(--gym-red);">Recommender</span></h2>
+        <div style="height: 3px; width: 80px; background: var(--gym-red); margin: 20px auto;"></div>
+        <p class="text-white-50 fs-5">Powered by Google Gemini AI</p>
+    </div>
+
+    <div class="row">
+        <!-- Input Form -->
+        <div class="col-md-5 mb-4">
+            <div class="card border-0 p-4 h-100" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px;">
+                <div class="card-body">
+                    <h4 class="text-white fw-bold mb-4">Your Details</h4>
+                    
+                    <form asp-action="GetRecommendation" method="post" id="aiForm">
+                        <div class="mb-3">
+                            <label class="form-label text-white">Your Goal</label>
+                            <select name="goal" class="form-select bg-dark text-white border-secondary" required>
+                                <option value="Weight Loss">Weight Loss</option>
+                                <option value="Muscle Gain">Muscle Gain (Hypertrophy)</option>
+                                <option value="Strength">Strength & Power</option>
+                                <option value="Endurance">Cardio Endurance</option>
+                                <option value="General Fitness">General Fitness & Health</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label text-white">Fitness Level</label>
+                            <select name="fitnessLevel" class="form-select bg-dark text-white border-secondary" required>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label text-white">Available Equipment</label>
+                            <select name="equipment" class="form-select bg-dark text-white border-secondary" required>
+                                <option value="Full Gym">Full Gym Access</option>
+                                <option value="Dumbbells Only">Dumbbells Only</option>
+                                <option value="Bodyweight Only">Bodyweight (No Equipment)</option>
+                                <option value="Resistance Bands">Resistance Bands</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-gym w-100 py-2 fw-bold" onclick="document.getElementById('loadingSpinner').style.display='block'; document.getElementById('resultBox').style.display='none';">
+                            Generate Plan <i class="fas fa-magic ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Output -->
+        <div class="col-md-7">
+            <div class="card border-0 p-4 h-100" style="background: var(--gym-card); border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                <div class="card-body">
+                    <h4 class="text-white fw-bold mb-4">Your AI Plan</h4>
+                    
+                    <div id="loadingSpinner" class="text-center my-5" style="display: none;">
+                        <div class="spinner-border text-danger" role="status" style="width: 3rem; height: 3rem;">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="text-white-50 mt-3">Consulting AI fitness expert...</p>
+                    </div>
+
+                    <div id="resultBox" class="text-white" style="line-height: 1.8;">
+                        @if (ViewBag.Recommendation != null)
+                        {
+                            @Html.Raw(ViewBag.Recommendation)
+                        }
+                        else
+                        {
+                            <div class="text-center text-white-50 mt-5 pt-4">
+                                <i class="fas fa-clipboard-list mb-3" style="font-size: 3rem;"></i>
+                                <p>Fill the form on the left and hit generate to get your personalized workout plan.</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

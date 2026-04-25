@@ -1,0 +1,73 @@
+@model SmartFitGym.Models.MemberProfile
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card border-0 p-4" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px;">
+                <div class="card-body">
+                    <h3 class="fw-bold text-white mb-4">Complete Your Profile</h3>
+                    
+                    <form asp-action="Profile" method="post">
+                        <input type="hidden" asp-for="UserId" />
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="FullName" class="form-label text-white">Full Name</label>
+                                <input asp-for="FullName" class="form-control bg-dark text-white border-secondary" required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Phone" class="form-label text-white">Phone Number</label>
+                                <input asp-for="Phone" class="form-control bg-dark text-white border-secondary" required />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Gender" class="form-label text-white">Gender</label>
+                                <select asp-for="Gender" class="form-select bg-dark text-white border-secondary">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="DateOfBirth" class="form-label text-white">Date of Birth</label>
+                                <input asp-for="DateOfBirth" type="date" class="form-control bg-dark text-white border-secondary" required />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Weight" class="form-label text-white">Weight (kg)</label>
+                                <input asp-for="Weight" type="number" step="0.1" class="form-control bg-dark text-white border-secondary" required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Height" class="form-label text-white">Height (cm)</label>
+                                <input asp-for="Height" type="number" step="0.1" class="form-control bg-dark text-white border-secondary" required />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="BloodGroup" class="form-label text-white">Blood Group</label>
+                                <input asp-for="BloodGroup" class="form-control bg-dark text-white border-secondary" />
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label asp-for="EmergencyContact" class="form-label text-white">Emergency Contact</label>
+                                <input asp-for="EmergencyContact" class="form-control bg-dark text-white border-secondary" required />
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Dashboard" class="btn btn-outline-light">Cancel</a>
+                            <button type="submit" class="btn btn-gym">Save Profile <i class="fas fa-save ms-2"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

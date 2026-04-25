@@ -1,0 +1,49 @@
+@model SmartFitGym.Models.WorkoutLog
+@{
+    ViewData["Title"] = "Log Workout";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-0 p-4" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px;">
+                <div class="card-body">
+                    <h3 class="fw-bold text-white mb-4"><i class="fas fa-fire text-danger me-2"></i>Log Your Workout</h3>
+                    
+                    <form asp-action="LogWorkout" method="post">
+                        <div class="mb-3">
+                            <label asp-for="WorkoutType" class="form-label text-white">Workout Type</label>
+                            <select asp-for="WorkoutType" class="form-select bg-dark text-white border-secondary">
+                                <option value="Cardio">Cardio</option>
+                                <option value="Weight Training">Weight Training</option>
+                                <option value="HIIT">HIIT</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="CrossFit">CrossFit</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="DurationMinutes" class="form-label text-white">Duration (Minutes)</label>
+                            <input asp-for="DurationMinutes" type="number" class="form-control bg-dark text-white border-secondary" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="CaloriesBurned" class="form-label text-white">Calories Burned (approx)</label>
+                            <input asp-for="CaloriesBurned" type="number" class="form-control bg-dark text-white border-secondary" required />
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Notes" class="form-label text-white">Notes (Optional)</label>
+                            <textarea asp-for="Notes" class="form-control bg-dark text-white border-secondary" rows="3" placeholder="How did it feel?"></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Dashboard" class="btn btn-outline-light">Back</a>
+                            <button type="submit" class="btn btn-gym">Save Workout <i class="fas fa-check ms-2"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

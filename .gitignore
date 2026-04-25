@@ -1,0 +1,48 @@
+# Binaries and build outputs
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# User-specific files
+*.user
+*.suo
+*.cache
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# NuGet packages
+packages/
+
+# Publish outputs
+publish/
+
+# Database files
+*.db
+*.sqlite
+
+# Environment files
+appsettings.Development.json
+# Uncomment if you want to ignore all appsettings.*.json except base
+# appsettings.*.json
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Temporary files
+*.tmp
+*.temp

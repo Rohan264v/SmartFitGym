@@ -1,0 +1,98 @@
+@model IEnumerable<SmartFitGym.Models.ApplicationUser>
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    var members = ViewBag.TotalMembers as IList<SmartFitGym.Models.ApplicationUser>;
+}
+
+<div class="container my-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-white"><i class="fas fa-shield-alt text-warning me-2"></i>Admin Dashboard</h2>
+        <a asp-action="ManageMembers" class="btn btn-outline-light">Manage All Members</a>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="card border-0 p-3" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px; border-left: 4px solid #0dcaf0 !important;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-white-50 mb-1">Total Members</h6>
+                        <h2 class="text-white mb-0">@(members?.Count ?? 0)</h2>
+                    </div>
+                    <div class="bg-info bg-opacity-25 p-3 rounded text-info">
+                        <i class="fas fa-users fs-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 p-3" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px; border-left: 4px solid #198754 !important;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-white-50 mb-1">Active Plans</h6>
+                        <h2 class="text-white mb-0">@ViewBag.ActiveSubscriptions</h2>
+                    </div>
+                    <div class="bg-success bg-opacity-25 p-3 rounded text-success">
+                        <i class="fas fa-check-circle fs-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 p-3" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px; border-left: 4px solid var(--gym-red) !important;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-white-50 mb-1">Total Revenue</h6>
+                        <h2 class="text-white mb-0">₹@ViewBag.TotalRevenue</h2>
+                    </div>
+                    <div class="bg-danger bg-opacity-25 p-3 rounded text-danger">
+                        <i class="fas fa-dollar-sign fs-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 p-3" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px; border-left: 4px solid #ffc107 !important;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-white-50 mb-1">Workouts (7d)</h6>
+                        <h2 class="text-white mb-0">@ViewBag.RecentWorkouts</h2>
+                    </div>
+                    <div class="bg-warning bg-opacity-25 p-3 rounded text-warning">
+                        <i class="fas fa-dumbbell fs-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Signups -->
+    <div class="card border-0" style="background: var(--gym-card); backdrop-filter: blur(10px); border-radius: 15px;">
+        <div class="card-header border-0 bg-transparent p-4">
+            <h5 class="text-white mb-0">Recent Signups</h5>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-dark table-hover mb-0" style="background: transparent;">
+                    <thead>
+                        <tr>
+                            <th class="ps-4">Name</th>
+                            <th>Email</th>
+                            <th>Joined Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+                                <td class="ps-4">@user.FullName</td>
+                                <td>@user.Email</td>
+                                <td>@user.CreatedAt.ToShortDateString()</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
